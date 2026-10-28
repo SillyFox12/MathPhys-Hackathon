@@ -1,0 +1,12 @@
+.printer-output {
+  font-family: system-ui;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.18px;
+  width: min(640px, calc(100vw - 32px));
+  height: 240px;
+  box-sizing: border-box;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  overflow-y: auto;
+}

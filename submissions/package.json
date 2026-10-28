@@ -1,0 +1,24 @@
+{
+  "name": "gotta-detect-em-all",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server/start.js",
+    "test:integration": "node --test integration_tests/*.test.mjs",
+    "smoke:live": "node server/smoke.js --live",
+    "preview": "node server/start.js --preview",
+    "build": "node scripts/build-worker.mjs",
+    "worker:dev": "wrangler dev --local --ip 127.0.0.1 --port 8787",
+    "worker:deploy": "wrangler deploy",
+    "worker:check": "wrangler deploy --dry-run"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "dependencies": {
+    "google-auth-library": "11.3.1"
+  },
+  "devDependencies": {
+    "wrangler": "4.152.0"
+  }
+}
